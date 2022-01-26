@@ -14,19 +14,10 @@ ReactDOM.render(
             <Header />
             <Routes>
                 <Route exact path="/" element={<Home name="Farid" />} />
-
-                {/* <Route path="/survey/:questionNumber">
-                    <Survey />
-                </Route>
-                <Route path="/results">
-                    <Results />
-                </Route>
-                <Route>
-                    <Freelances />
-                </Route>
-                <Route>
-                    <Error />
-                </Route> */}
+                <Route path="/survey/:questionNumber" element={<Survey />} />
+                <Route path="/results" element={<Results />} />
+                <Route path="/freelances" element={<Freelances />} />
+                <Route path="/error" element={<Error />} />
             </Routes>
         </Router>
     </React.StrictMode>,
